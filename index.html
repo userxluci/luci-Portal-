@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luci Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loginPage" class="center">
+  <h1>Luci Portal ✨</h1>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="app" style="display:none;">
+  <header>
+    <h1>Luci Portal 💎</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Basic Package</h2>
+      <p>Starter Plan</p>
+      <div class="price">₹999</div>
+      <button onclick="pay('Basic')">Buy</button>
+    </div>
+
+    <div class="card">
+      <h2>Pro Package 🔥</h2>
+      <p>Growth + Content</p>
+      <div class="price">₹1999</div>
+      <button onclick="pay('Pro')">Buy</button>
+    </div>
+
+    <div class="card">
+      <h2>VIP Package 👑</h2>
+      <p>Full Management</p>
+      <div class="price">₹3999</div>
+      <button onclick="pay('VIP')">Buy</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
